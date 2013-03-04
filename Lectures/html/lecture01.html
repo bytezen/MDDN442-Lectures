@@ -1,0 +1,823 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MDDN 442 Computer Graphics for Interaction Design</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="css/default.css">
+  <link rel="stylesheet" media="all" href="css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="assets/mddn442_icon.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>MDDN 442 - Lecture I</h1>
+<p>0503.13</p>
+<h1>Agenda</h1>
+<ul>
+<li>Syllabus</li>
+<li>Your Interests</li>
+<li>Piazza</li>
+<li>Workshop 1-2</li>
+<li>Lecture 1</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>Syllabus</h1>
+<ul>
+<li>Course divided into Workshops and Projects</li>
+<li>Workshops (30%) (minimum 5 hour homework <strong>challenges</strong>)</li>
+<li>Projects:<ul>
+<li>Midterm (30%)</li>
+<li>Final (40%)</li>
+<li>individual / group</li>
+<li>your / class interests</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+ 1. What are you interests?
+ 2. What if any creative coding tools are you familiar with? 
+-->
+
+<h1>Your interests...</h1>
+<p><strong>???</strong></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    list some topics of interests,
+    why are you taking this class
+-->
+
+<h1>Your interests...</h1>
+<ul>
+<li>what do you want to learn</li>
+<li>what do you want to learn better</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>The Maker's Challenge</h1>
+<p><img alt="makers discources" src="assets/makers_discourse.jpg" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>The Maker's Challenge</h1>
+<ul>
+<li>Professional Amateur<ul>
+<li>Learn to learn, invent and engage
+   ...fast</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>Workshop 1</h1>
+<p>hand-in 12.03</p>
+<p>"Prepare a 10 minute presentation of your portfolio"</p>
+<ul>
+<li>Be prepared to address questions about the work (technical and conceptual)</li>
+<li>Hand in documenation of the presented work to the tutor drive</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    1. What is creative coding
+    2. Can you name some Creative coding tools?
+-->
+
+<h1>Creative Coding ???</h1>
+<ul>
+<li>Loosely defined as coding tools for artists.</li>
+<li>Of course any code can be deployed by artists and used creatively.</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>Creative Coding Tools / Frameworks</h1>
+<ul>
+<li><a href="http://www.openframeworks.cc">openFrameworks</a></li>
+<li><a href="http://processing.org">Processing</a></li>
+<li><a href="http://libcinder.org">Cinder</a></li>
+<li><a href="http://openendedgroup.com/field/">Field</a></li>
+<li><a href="http://puredata.info">PureData</a></li>
+<li><a href="http://cycling74.com/products/max">Max/MSP/Jitter</a></li>
+<li><a href="http://nodebox.net">Nodebox</a></li>
+<li><a href="http://vvvv.org">vvvv</a></li>
+<li><a href="http://www.derivative.ca">Touch Designer</a></li>
+<li><a href="http://http://supercollider.sourceforge.net/">Super Collider</a></li>
+<li><a href="http://mrdoob.github.com/three.js">three.js</a></li>
+<li><a href="http://vuo.org">Vuo</a></li>
+<li><a href="http://developer.apple.com">Quartz Composer</a></li>
+<li><a href="http://spacebrew.cc">SpaceBrew</a></li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    How do you define interaction in terms of this class
+-->
+
+<h1>What is Interactivity ???</h1></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>What is Interactivity ???</h1>
+<ul>
+<li>We are going to use an expansive definition</li>
+</ul>
+<p>interactive graphics 
+:   an external signal that controls the rendering of digital content</p>
+<ul>
+<li>examples:<ul>
+<li>data</li>
+<li>humans</li>
+<li>transducers</li>
+<li>controllers</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>Our weapons of choice</h1>
+<ul>
+<li>Technologies:<ul>
+<li>Midi, OSC, Syphon, Spacebrew ???</li>
+</ul>
+</li>
+<li>Language:<ul>
+<li>WebGL, OpenGL, GLSL, ???</li>
+<li><strong>Cinder</strong>  <br />
+</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="build_list smaller" >
+  
+    <hgroup>
+      <h2>Why Cinder?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Cinder will make you smarter</li>
+<li>Cinder will make you hotter</li>
+<li>Cinder will make you run faster</li>
+<li>Come on everyone is doing it...<br />
+    I'll be your best friend...<br />
+    what are you chicken...<br />
+    (other favorite peer pressure lines ???)</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Why Cinder?</h2>
+      <h3>Abstraction</h3>
+    </hgroup>
+    <article ><ul>
+<li>
+<p>Cinder:
+    <pre>
+        gl::drawLine()
+    </pre></p>
+</li>
+<li>
+<p>OpenGL: <br />
+    <pre>
+        glEnableClientState( GL_VERTEX_ARRAY );
+        glVertexPointer( 2, GL_FLOAT, 0, lineVerts );
+        lineVerts[0] = start.x; lineVerts[1] = start.y;
+        lineVerts[2] = end.x; lineVerts[3] = end.y;
+        glDrawArrays( GL_LINES, 0, 2 );
+        glDisableClientState( GL_VERTEX_ARRAY );
+    </pre></p>
+</li>
+<li>
+<p>Abstracts Native windowing systems ( OS X, Windows )</p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Why Cinder?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>C++ is hard but we are tough sons-of-bitches<br />
+<a href="http://markshroyer.com/2012/06/c-both-true-and-false/">A Zen Moment in C</a></li>
+<li>C++ is closer to the mettle of the hardware</li>
+<li>Many systems still use C++ and this will get you closest to the most hardcore systems...build up from there</li>
+<li>Learning new languages in a non-creative context is often frustrating because the content is misscoped</li>
+<li>Learning in a group and leveraging experiences is fun and easier</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Why Cinder?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    * Paul Houx is a very active member of the community. Here you see one of his first posts...
+    * Discussion about framework organization decisions...
+    * Discussion on strategies for architecting C++ code
+        * [SJBaker C++ Headers Wiki](http://www.sjbaker.org/wiki/index.php?title=C%2B%2B:_multiple_source_files)
+
+-->
+
+<ul>
+<li>The community is awesome, strong and high profile<br />
+</li>
+</ul>
+<p><a href="https://www.google.co.nz/search?q=mouse+callback+example+site%3Alibcinder.org&amp;aq=f&amp;oq=mouse+callback+example+site%3Alibcinder.org&amp;aqs=chrome.0.57.11722j0&amp;sourceid=chrome&amp;ie=UTF-8">mouse callback example site:libcinder.org</a></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    Run IBM THINK examples
+-->
+
+<h1>Why Cinder?</h1>
+<ul>
+<li>Differentiate yourself in the marketplace<ul>
+<li>Work at Disney <a href="http://jtnimoy.net/workviewer.php?q=178">Tron</a></li>
+<li>IBM THINK </li>
+<li><a href="http://www.kramweisshaar.com/">KeimWeisshaar</a></li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Workshop 2</h2>
+      <h3>12.03</h3>
+    </hgroup>
+    <article ><ol>
+<li>Get Cinder installed. Use the Git version</li>
+<li>Get yourself setup on Git</li>
+<li>Go through Robert Hodgins Welcome to Cinder tutorial</li>
+<li>Make some changes to the tutorial</li>
+</ol></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>Let's Get Started - OpenGL...</h1></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>OpenGL</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>OpenGL:
+    A set of APIs to interface with graphics hardware</p>
+<ul>
+<li>manages GPU resources to render image</li>
+<li>low-level geometric primitives: points, lines, polys</li>
+<li>higher level objects are managed by external frameworks (e.g. GLU, Cinder, Processing, PyGL, etc.)</li>
+<li>windowing operations and I/O are managed by external frameworks</li>
+<li>hardware and OS independent. Cross platform???  <br />
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>OpenGL Pipeline</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    The inputs to the vertex transformation are the vertices and per vertex attributes,  
+    like color, normals, tex coords.
+-->
+
+<p><img alt="Pipeline" src="assets/pipeline.gif" /></p>
+<h3>Vertex Transformations</h3>
+<ul>
+<li>In: vertex positions</li>
+<li>In: lighting positions per vertex</li>
+<li>Out: generation and transformation of texture coordinates</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>OpenGL Pipeline</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Pipeline" src="assets/pipeline.gif" /></p>
+<h3>Primitive Assembly / Rasterization</h3>
+<ul>
+<li>In: transformed vertices</li>
+<li>In: connectivity information</li>
+<li>Out: Fragment positions, and interpolated fragment attributes</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Connectivity" src="assets/geometricPrimitiveTypes.gif" /></p></article>
+ 
+</slide>
+
+<slide class="smaller" >
+  
+    <hgroup>
+      <h2>OpenGL Pipeline</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Pipeline" src="assets/pipeline.gif" /></p>
+<h3>Fragment Texturing and Coloring</h3>
+<ul>
+<li>In: interpolated color and TexCoords for pixels in fragment</li>
+<li>In: Texel information</li>
+<li>In: Fog</li>
+<li>Out: Color value and depth value per fragment</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="small" >
+  
+    <hgroup>
+      <h2>OpenGL Pipeline</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Pipeline" src="assets/pipeline.gif" /></p>
+<h3>Raserization</h3>
+<ul>
+<li>In: pixel location</li>
+<li>In: fragment color and depth </li>
+<li>In: tests -&gt; scissor test, alpha test, stencil test, depth test</li>
+<li>Out: pixel color based on tests and blend mode</li>
+</ul></article>
+ 
+</slide>
+
+<slide class="smaller" >
+  
+    <hgroup>
+      <h2>OpenGL Pipeline</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><img alt="Pipeline Example" src="assets/visualpipeline.gif" /></p>
+<p>class: source</p>
+<p>this is the source</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>OpenGL</h1>
+<ul>
+<li>OpenGL is a State Machine</li>
+<li>Set flags that configure the state</li>
+<li>Send Primitives to be rendered</li>
+<li>Clear state</li>
+<li>Repeat</li>
+<li>The applications tells the card how to draw primitives via state variables</li>
+<li>
+<p>When drawing the card uses the current state to determine how primitives are drawn</p>
+</li>
+<li>
+<p>GL Version detection via:
+<a href="http://www.realtech-vr.com/glview/">GLView</a></p>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>OpenGL</h1>
+<ul>
+<li>state variables:<ul>
+<li>background color</li>
+<li>vertex color</li>
+<li>camera position, orientation, FOV</li>
+<li>ligthing (color, number, location)</li>
+<li>drawing modes (points, lines, ) (e.g. Processing Begin Shape modes)</li>
+<li>normal vectors</li>
+<li>material properties</li>
+<li>texture properties</li>
+<li>depth, transparency, fog, antialiasing</li>
+<li>viewing and projection matrices</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><h1>OpenGL - Application Overview</h1>
+<ol>
+<li>Create a window and bind OpenGL to it</li>
+<li>Setup Event handlers (e.g. window resize)</li>
+<li>Setup the drawing canvas</li>
+<li>Prepare canvas for rendering with state variables</li>
+<li>Draw Loop<ul>
+<li>clear framebuffer</li>
+<li>screen coordinate mapping (optional)</li>
+<li>change projection matrix (if necessary)</li>
+<li>set up lights and camera</li>
+<li>draw primitives</li>
+<li>...render....</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h1>Ignore the previous 4 slides...sort of</h1>
+<ul>
+<li>Cinder abstracts the goryness of OpenGL away</li>
+<li>However, when you need to know something, change something, learn something the Cinder source is a great place to visit<ul>
+<li>gl::<br />
+example: 
+<pre>
+</pre></li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Cinder</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ol>
+<li><a href="http://libcinder.org/docs/welcome/GitSetup.html">Download Cinder</a><ul>
+<li>follow instructions to build Cinder</li>
+</ul>
+</li>
+<li>Open the <pre>_AllSamples</pre> project</li>
+<li>Open the <pre>basicApp</pre> (32bit version)</li>
+</ol></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Cinder - Basic App</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="c++">
+class BasicApp : public AppBasic {
+ public:
+    // Cinder will always call this function whenever the user drags the mouse
+    void mouseDrag( MouseEvent event );
+    void keyDown( KeyEvent event );
+    // Cinder calls this function 30 times per second by default
+    void draw();
+
+    // This will maintain a list of points which we will draw line segments between
+    list<Vec2f>     mPoints;
+};
+</pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Cinder - Basic App</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    * Note gl:: namespace calls mixed with openGL calls
+    * Note OpenGL setMatricesWindow call. What is that doing?
+    * glBegin... equivalent to <pre>beginShape()</pre> in Processing
+-->
+
+<pre class="c++">
+void BasicApp::draw()
+{
+    gl::setMatricesWindow( getWindowSize() );
+    // this pair of lines is the standard way to clear the screen in OpenGL
+    gl::clear( Color( 0.1f, 0.1f, 0.1f ) );
+
+    // We'll set the color to an orange color
+    glColor3f( 1.0f, 0.5f, 0.25f );
+
+    // now tell OpenGL we've got a series of points it should draw lines between
+    glBegin( GL_LINE_STRIP );
+    // iterate across our list of points, and pass each one to OpenGL
+    for( list<Vec2f>::iterator pointIter = mPoints.begin(); pointIter != mPoints.end(); ++pointIter ) {
+        glVertex2f( *pointIter );
+    }
+    // tell OpenGL to actually draw the lines now
+    glEnd();
+}
+</pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>OpenGL Matrices and back to Linear Algebra</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Open the Cinder Source for hints!</li>
+<li>cinder::gl</li>
+</ul>
+<pre class="c++">
+void setMatricesWindow( int screenWidth, int screenHeight, bool originUpperLeft )
+{
+    glMatrixMode( GL_PROJECTION );
+    glLoadIdentity();
+#if defined( CINDER_GLES )
+    if( originUpperLeft )
+        glOrthof( 0, screenWidth, screenHeight, 0, -1.0f, 1.0f );
+    else
+        glOrthof( 0, screenWidth, 0, screenHeight, -1.0f, 1.0f );
+#else   
+    if( originUpperLeft )
+        glOrtho( 0, screenWidth, screenHeight, 0, -1.0f, 1.0f );
+    else
+        glOrtho( 0, screenWidth, 0, screenHeight, -1.0f, 1.0f );
+#endif
+    glMatrixMode( GL_MODELVIEW );
+    glLoadIdentity();
+    glViewport( 0, 0, screenWidth, screenHeight );
+}
+</pre>
+
+<ul>
+<li>refresher<br />
+<a href="http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/">OpenGL Matrix Overview</a></li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Cinder AppBasic</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><!--
+    In App.h point out:
+    - CallbackId registerXXXXX()
+    - timeline()
+    - copyWindowSurface()
+-->
+
+<ul>
+<li>App -&gt; AppBasic -&gt; <strong><your App></strong></li>
+<li>You can learn what is capable by browsing the header files  <br />
+<ul>
+<li>AppBasic.h</li>
+<li>App.h</li>
+</ul>
+</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Cinder Tut</h2>
+      <h3>creating your first app</h3>
+    </hgroup>
+    <article ><!--
+    1. Run the Google Search for Call backs
+    2. Note the Listener Example
+    3. Open Listener and Run it
+    4. Open the Code and see what is happening: __Note the Architecture!__
+    5. Enter our version of the code:
+        * member color
+        * Member function
+    6. Build with error in the color....
+    7. Show how to look up the color in the documentation on Cinder. Strategies.
+    8. Can't change the mouse color back??
+    9. Use built in Cinder mouseHandlers
+-->
+
+<ol>
+<li>Tinderbox (first time requires path to Cinder)</li>
+<li>How to add Callbacks ??<ul>
+<li><a href="https://www.google.co.nz/search?q=mouse+callback+example+site%3Alibcinder.org&amp;aq=f&amp;oq=mouse+callback+example+site%3Alibcinder.org&amp;aqs=chrome.0.57.11722j0&amp;sourceid=chrome&amp;ie=UTF-8">mouse callback example site:libcinder.org</a></li>
+<li>There is a Listener Example!</li>
+</ul>
+</li>
+</ol></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="assets/mddn442_icon.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+    <p>Important contact information goes here.</p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
