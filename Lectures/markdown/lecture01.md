@@ -1,19 +1,23 @@
 
-MDDN 442 - Lecture I
-====================
-0503.13
+title: MDDN 442 - Lecture I
+subtitle: 0503.13
+class: title-slide
+
 
 # Agenda
-
-* Syllabus
-* Your Interests
-* Piazza
-* Workshop 1-2
+* Course Intro
+	* Syllabus
+	* Admin: Piazza
+	* Your Interests
+	* Course Breakdown
+* Workshops 1-2
 * Lecture 1
 
 ---
 
-# Overview
+title: MDDN442 Overview
+build_lists: true
+
 * Goals:
 	* Have fun
 	* Do some cool shit
@@ -23,8 +27,9 @@ MDDN 442 - Lecture I
 
 ---
 
+title: Syllabus
+build_lists: true
 
-# Syllabus
 * Course divided into Workshops and Projects
 * Workshops (30%) (minimum 5 hour homework __challenges__)
 * Projects:
@@ -35,43 +40,63 @@ MDDN 442 - Lecture I
 
 ---
 
-<!--
- 1. What are you interests?
- 2. What if any creative coding tools are you familiar with? 
--->
-# Your interests...
+title: Your interests...
 
 __???__
 
----
 
-<!--
-	list some topics of interests,
-	why are you taking this class
--->
-# Your interests...
+#### note
+ * What are you interests?
+ * What if any creative coding tools are you familiar with? 
 
-* what do you want to learn
-* what do you want to learn better
 
 ---
 
-# The Maker's Challenge
+title: Your interests...
 
-![makers discources](assets/makers_discourse.jpg)
+* what do you know?
+* what do you want to learn?
+* what do you want to learn better?
+* what are you researching?
+
+#### note
+ * list some topics of interests
+ * why are you taking this class
 
 ---
 
-# The Maker's Challenge
+title: Our Challenge: Building Tech Skillz
+content_class: flexbox vcenter
 
-* Professional Amateur
-	* Learn to learn, invent and engage
-	   ...fast
+![makers discource tech](assets/makers_discourse_tacit.png)
+
 
 ---
 
-# Workshop 1
-hand-in 12.03
+title: A Media Design Framework
+content_class: flexbox vcenter
+
+![makers discource ](assets/makers_discourse.png)
+
+
+---
+
+title: The CG Media Design Trap
+content_class: flexbox vcenter
+
+![makers discource tech](assets/makers_discourse_tech.png)
+
+
+---
+
+
+### Become a professional amateur  
+#### Learn to learn, invent and engage...fast
+
+---
+
+title: Workshop 1
+subtitle: hand-in 12.03
 
 "Prepare a 10 minute presentation of your portfolio"
 
@@ -80,18 +105,22 @@ hand-in 12.03
 
 ---
 
-<!--
-	1. What is creative coding
-	2. Can you name some Creative coding tools?
--->
-# Creative Coding ???
+title: Creative Coding ???
+build_lists: true
 
 * Loosely defined as coding tools for artists.
 * Of course any code can be deployed by artists and used creatively.
 
+#### note
+* What is creative coding
+* Can you name some Creative coding tools?
+* What have you used?
+* coding tools built for artists and used by artists
+
 ---
 
-# Creative Coding Tools / Frameworks
+title: Creative Coding Tools / Frameworks
+content_class: smaller
 
 * [openFrameworks](http://www.openframeworks.cc)
 * [Processing](http://processing.org)
@@ -110,19 +139,19 @@ hand-in 12.03
 
 ---
 
-<!--
+title: What is Interactivity ???
+
+#### note
 	How do you define interaction in terms of this class
--->
-# What is Interactivity ???
 
 ---
 
-# What is Interactivity ???
+title: What is Interactivity ???
+
 * We are going to use an expansive definition
 
 interactive graphics 
-:	an external signal that controls the rendering of digital content
-
+:	an external __signal__ that controls the rendering of digital content
 
 * examples:
 	* data
@@ -132,39 +161,49 @@ interactive graphics
 
 ---
 
-# Our weapons of choice
+title: Our weapons of choice
+build_lists: true
 
-* Technologies:
-	* Midi, OSC, Syphon, Spacebrew ???
 * Language:
-	* WebGL, OpenGL, GLSL, ???
-	* __Cinder__	
+	* C++ 
+* APIs:
+	* OpenGL, GLSL, WebGL ???
+* Framework:
+	* __Cinder__
+* Technologies:
+	* Midi, OSC, Syphon, Spacebrew(?), ???	
 
 ---
 
 title: Why Cinder?
-class: build_list smaller
+class: smaller
+build_lists: true
 
 * Cinder will make you smarter
 * Cinder will make you hotter
 * Cinder will make you run faster
-* Come on everyone is doing it...  
-	I'll be your best friend...  
-	what are you chicken...  
-	(other favorite peer pressure lines ???)
+* "come on everyone is doing it..."  
+"I'll be your best friend..."  
+"what are you chicken..."  
+...other favorite peer pressure lines
 
 ---
 
 title: Why Cinder?
-subtitle: Abstraction
+subtitle: Abstraction 
 
-* Cinder:
-	<pre>
-		gl::drawLine()
-	</pre>
+* Abstracts Native windowing systems ( OS X, Windows, iOS )
+* Abstracts OpenGL...
+
+---
+
+title: Why Cinder?
+subtitle: Abstraction OpenGL
+class: smaller
+build_lists: true
 
 * OpenGL:	
-	<pre>
+	<pre class="pretty-print" data-lang="c++">
 		glEnableClientState( GL_VERTEX_ARRAY );
 		glVertexPointer( 2, GL_FLOAT, 0, lineVerts );
 		lineVerts[0] = start.x; lineVerts[1] = start.y;
@@ -173,68 +212,84 @@ subtitle: Abstraction
 		glDisableClientState( GL_VERTEX_ARRAY );
 	</pre>
 
-* Abstracts Native windowing systems ( OS X, Windows )
+* Cinder:
+	<pre class="pretty-print" data-lang="c++">
+		gl::drawLine();
+	</pre>
+
+#### note
+* Level of familiarity with OpenGL
+* Which version 
 
 ---
 
 title: Why Cinder?
+build_lists: true
 
-* C++ is hard but we are tough sons-of-bitches  
-	[A Zen Moment in C](http://markshroyer.com/2012/06/c-both-true-and-false/)
+* C++ is hard ( but we are tough sons-of-bitches )
+	* [A Zen Moment in C](http://markshroyer.com/2012/06/c-both-true-and-false/)
 * C++ is closer to the mettle of the hardware
-* Many systems still use C++ and this will get you closest to the most hardcore systems...build up from there
+* Many systems still use C++
+	* C++ gets you closest to the most hardcore systems...build up ( abstract ) from there
 * Learning new languages in a non-creative context is often frustrating because the content is misscoped
 * Learning in a group and leveraging experiences is fun and easier
 
+#### note
+* take home message from Zen Moment in C __INITIALIZE YOUR VARIABLES!!__
+
 ---
 
 title: Why Cinder?
 
-<!--
-	* Paul Houx is a very active member of the community. Here you see one of his first posts...
-	* Discussion about framework organization decisions...
-	* Discussion on strategies for architecting C++ code
-		* [SJBaker C++ Headers Wiki](http://www.sjbaker.org/wiki/index.php?title=C%2B%2B:_multiple_source_files)
-
--->
-
 * The community is awesome, strong and high profile  
+* The code is architected very well
 
+#### example
 [mouse callback example site:libcinder.org](https://www.google.co.nz/search?q=mouse+callback+example+site%3Alibcinder.org&aq=f&oq=mouse+callback+example+site%3Alibcinder.org&aqs=chrome.0.57.11722j0&sourceid=chrome&ie=UTF-8)
+
+#### note
+* Paul Houx is a very active member of the community. Here you see one of his first posts...
+* Discussion about framework organization decisions...
+* Discussion on strategies for architecting C++ code
+	* [SJBaker C++ Headers Wiki](http://www.sjbaker.org/wiki/index.php?title=C%2B%2B:_multiple_source_files)
 
 
 ---
 
-<!--
-	Run IBM THINK examples
--->
-# Why Cinder?
+title: Why Cinder?
 
 * Differentiate yourself in the marketplace
-	* Work at Disney [Tron](http://jtnimoy.net/workviewer.php?q=178)
+	* Work at Disney 
+		* [Tron](http://jtnimoy.net/workviewer.php?q=178)
 	* IBM THINK 
 	* [KeimWeisshaar](http://www.kramweisshaar.com/)
+
+#### note
+* Stop KeimWeisshaar example at 40sec
+* Run IBM THINK examples from desktop
+
 
 ---
 
 title: Workshop 2
-subtitle: 12.03
-
+subtitle: due 12.03
 
 1. Get Cinder installed. Use the Git version
 2. Get yourself setup on Git
 3. Go through Robert Hodgins Welcome to Cinder tutorial
 4. Make some changes to the tutorial
+5. Turn your app into the Tutor drive (upload to Piazza?)
 
 ---
 
-Let's Get Started - OpenGL...
-========
+title: Let's Get Started - OpenGL...
+class: seque
+
 
 ---
 
 title: OpenGL
-
+build_lists: true
 
 OpenGL:
 	A set of APIs to interface with graphics hardware
@@ -244,102 +299,26 @@ OpenGL:
 * higher level objects are managed by external frameworks (e.g. GLU, Cinder, Processing, PyGL, etc.)
 * windowing operations and I/O are managed by external frameworks
 * hardware and OS independent. Cross platform???	
-
----
-
-title: OpenGL Pipeline
-
-<!--
-	The inputs to the vertex transformation are the vertices and per vertex attributes,  
-	like color, normals, tex coords.
--->
-![Pipeline](assets/pipeline.gif)
-
-### Vertex Transformations
-
-* In: vertex positions
-* In: lighting positions per vertex
-* Out: generation and transformation of texture coordinates
-
----
-
-title: OpenGL Pipeline
-
-
-![Pipeline](assets/pipeline.gif)
-
-### Primitive Assembly / Rasterization
-
-* In: transformed vertices
-* In: connectivity information
-* Out: Fragment positions, and interpolated fragment attributes
-
----
-
-![Connectivity](assets/geometricPrimitiveTypes.gif)
-
----
-
-title: OpenGL Pipeline
-class: smaller
-
-
-![Pipeline](assets/pipeline.gif)
-
-### Fragment Texturing and Coloring
-
-* In: interpolated color and TexCoords for pixels in fragment
-* In: Texel information
-* In: Fog
-* Out: Color value and depth value per fragment
-
----
-
-title: OpenGL Pipeline
-class: small
-
-
-![Pipeline](assets/pipeline.gif)
-
-### Raserization
-
-* In: pixel location
-* In: fragment color and depth 
-* In: tests -> scissor test, alpha test, stencil test, depth test
-* Out: pixel color based on tests and blend mode
-
----
-
-title: OpenGL Pipeline
-class: smaller
-
-![Pipeline Example](assets/visualpipeline.gif)
-
-class: source
-
-this is the source
-
-
+	* GL Version detection via:
+		* [GLView](http://www.realtech-vr.com/glview/)
 
 
 ---
 
-# OpenGL
+title: OpenGL
+build_lists: true
 
 * OpenGL is a State Machine
-1. Set flags that configure the state
-2. Send Primitives to be rendered
-3. Clear state
-4. Repeat
+	* Set flags that configure the state
+	* Send Primitives to be rendered
+	* Clear state
+	* Repeat
 * The applications tells the card how to draw primitives via state variables
 * When drawing the card uses the current state to determine how primitives are drawn
 
-* GL Version detection via:
-[GLView](http://www.realtech-vr.com/glview/)
-
 ---
 
-# OpenGL
+title: OpenGL
 
 * state variables:
 	* background color
@@ -355,13 +334,15 @@ this is the source
 
 ---
 
-# OpenGL - Application Overview
+title: OpenGL - Application Overview
+build_lists: true
 
-1. Create a window and bind OpenGL to it
-2. Setup Event handlers (e.g. window resize)
-3. Setup the drawing canvas
-4. Prepare canvas for rendering with state variables
-5. Draw Loop
+* Setup:
+	* Create a window and bind OpenGL to it
+	* Setup Event handlers (e.g. window resize)
+	* Setup the drawing canvas
+	* Prepare canvas for rendering with state variables
+* Draw: 
 	* clear framebuffer
 	* screen coordinate mapping (optional)
 	* change projection matrix (if necessary)
@@ -369,9 +350,119 @@ this is the source
 	* draw primitives
 	* ...render....
 
+---
+
+title: OpenGL Pipeline
+class: smaller
+content_class: flexbox vcenter
+
+![Pipeline Example](assets/visualpipeline.gif)
+
+---
+
+title: OpenGL Pipeline
+content_class: flexbox vcenter
+
+![Pipeline](assets/pipeline.gif)
+
+### Vertex Transformations
+
+* In: vertex positions
+* In: lighting positions per vertex
+* Out: generation and transformation of texture coordinates
+
+#### note
+* The inputs to the vertex transformation are the vertices and per vertex attributes,  
+	like color, normals, tex coords.
+
+
+---
+
+title: OpenGL Pipeline
+class: smaller
+content_class: flexbox vcenter
+
+![Pipeline Example](assets/visualpipeline.gif)
+
+---
+
+title: OpenGL Pipeline
+content_class: flexbox vcenter
+
+![Pipeline](assets/pipeline.gif)
+
+### Primitive Assembly / Rasterization
+
+* In: transformed vertices
+* In: connectivity information
+* Out: Fragment positions, and interpolated fragment attributes
+
+#### note
+* Model, View and Projection matrices are used to transform the vertices
+
+---
+title: OpenGL Connectivity Types
+content_class: flexbox vcenter
+
+![Connectivity](assets/geometricPrimitiveTypes.gif)
+
+---
+
+title: OpenGL Pipeline
+class: smaller
+content_class: flexbox vcenter
+
+![Pipeline Example](assets/visualpipeline.gif)
+
+---
+
+title: OpenGL Pipeline
+content_class: flexbox vcenter
+class: smaller
+
+![Pipeline](assets/pipeline.gif)
+
+### Fragment Texturing and Coloring
+
+* In: interpolated color and TexCoords for pixels in fragment
+* In: Texel information
+* In: Fog
+* Out: Color value and depth value per fragment
+
+---
+
+title: OpenGL Pipeline
+class: smaller
+content_class: flexbox vcenter
+
+![Pipeline Example](assets/visualpipeline.gif)
+
+---
+
+title: OpenGL Pipeline
+class: small
+content_class: flexbox vcenter
+
+![Pipeline](assets/pipeline.gif)
+
+### Raserization
+
+* In: pixel location
+* In: fragment color and depth 
+* In: tests -> scissor test, alpha test, stencil test, depth test
+* Out: pixel color based on tests and blend mode
+
+---
+
+title: OpenGL Pipeline
+class: smaller
+content_class: flexbox vcenter
+
+![Pipeline Example](assets/visualpipeline.gif)
+
 ---	
 
-# Ignore the previous 4 slides...sort of
+title: Ignore the previous 4 slides...sort of
 
 * Cinder abstracts the goryness of OpenGL away
 * However, when you need to know something, change something, learn something the Cinder source is a great place to visit
@@ -381,17 +472,18 @@ this is the source
 	</pre>
 
 ---
+
 title: Cinder
 
-1. [Download Cinder](http://libcinder.org/docs/welcome/GitSetup.html)
+* [Download Cinder](http://libcinder.org/docs/welcome/GitSetup.html)
 	* follow instructions to build Cinder
-2. Open the <pre>_AllSamples</pre> project
-3. Open the <pre>basicApp</pre> (32bit version)
+* Open the "_AllSamples" project
+* Open the "basicApp" (32bit version)
 
 ---
 title: Cinder - Basic App
 
-<pre class="c++">
+<pre class="pretty-print" data-lang="c++">
 class BasicApp : public AppBasic {
  public:
 	// Cinder will always call this function whenever the user drags the mouse
@@ -408,14 +500,9 @@ class BasicApp : public AppBasic {
 
 ---
 title: Cinder - Basic App
+content_class: smaller
 
-<!--
-	* Note gl:: namespace calls mixed with openGL calls
-	* Note OpenGL setMatricesWindow call. What is that doing?
-	* glBegin... equivalent to <pre>beginShape()</pre> in Processing
--->
-
-<pre class="c++">
+<pre class="pretty-print" data-lang="c++">
 void BasicApp::draw()
 {
 	gl::setMatricesWindow( getWindowSize() );
@@ -436,13 +523,18 @@ void BasicApp::draw()
 }
 </pre>
 
+#### note
+* Note gl:: namespace calls mixed with openGL calls
+* Note OpenGL setMatricesWindow call. What is that doing?
+* glBegin... equivalent to <pre>beginShape()</pre> in Processing
+
+
+
 ---
 title: OpenGL Matrices and back to Linear Algebra
+content_class: smaller
 
-* Open the Cinder Source for hints!
-* cinder::gl
-
-<pre class="c++">
+<pre class="pretty-print" data-lang="c++">
 void setMatricesWindow( int screenWidth, int screenHeight, bool originUpperLeft )
 {
 	glMatrixMode( GL_PROJECTION );
@@ -464,47 +556,57 @@ void setMatricesWindow( int screenWidth, int screenHeight, bool originUpperLeft 
 }
 </pre>
 
-* refresher  
-[OpenGL Matrix Overview](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/)
+
+
+---
+title: OpenGL Matrices and back to Linear Algebra
+
+
+* Open the Cinder Source for hints!
+* cinder::gl
+* refreshers:  
+	* [OpenGL Matrix Overview](http://www.opengl-tutorial.org/beginners-tutorials/tutorial-3-matrices/)
+	* [Intuitive Guide to Linear Algebra](http://betterexplained.com/articles/linear-algebra-guide/)
+	* [Matrices Can Be Your Friend](http://www.sjbaker.org/steve/omniv/matrices_can_be_your_friends.html)
+
 
 ---
 title: Cinder AppBasic
-
-<!--
-	In App.h point out:
-	- CallbackId registerXXXXX()
-	- timeline()
-	- copyWindowSurface()
--->
 
 * App -> AppBasic -> __<your App>__
 * You can learn what is capable by browsing the header files	
 	* AppBasic.h
 	* App.h
 
+#### note
+In App.h point out:
+- CallbackId registerXXXXX()
+- timeline()
+- copyWindowSurface()
+
+
 ---
 title: Cinder Tut
 subtitle: creating your first app
 
-<!--
-	1. Run the Google Search for Call backs
-	2. Note the Listener Example
-	3. Open Listener and Run it
-	4. Open the Code and see what is happening: __Note the Architecture!__
-	5. Enter our version of the code:
-		* member color
-		* Member function
-	6. Build with error in the color....
-	7. Show how to look up the color in the documentation on Cinder. Strategies.
-	8. Can't change the mouse color back??
-	9. Use built in Cinder mouseHandlers
--->	
 
 1. Tinderbox (first time requires path to Cinder)
 2. How to add Callbacks ??
 	* [mouse callback example site:libcinder.org](https://www.google.co.nz/search?q=mouse+callback+example+site%3Alibcinder.org&aq=f&oq=mouse+callback+example+site%3Alibcinder.org&aqs=chrome.0.57.11722j0&sourceid=chrome&ie=UTF-8)
 	* There is a Listener Example!
 
+#### note
+1. Run the Google Search for Call backs
+2. Note the Listener Example
+3. Open Listener and Run it
+4. Open the Code and see what is happening: __Note the Architecture!__
+5. Enter our version of the code:
+	* member color
+	* Member function
+6. Build with error in the color....
+7. Show how to look up the color in the documentation on Cinder. Strategies.
+8. Can't change the mouse color back??
+9. Use built in Cinder mouseHandlers
 
 
 
