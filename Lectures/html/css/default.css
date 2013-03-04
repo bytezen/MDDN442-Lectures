@@ -325,7 +325,7 @@ slides > slide:not(.nobackground):after {
 /* line 194, ../scss/default.scss */
 slides > slide.title-slide:after {
   content: '';
-  background: url(../images/io2012_logo.png) no-repeat 100% 50%;
+  background: url(../assets/vuw-logo1.jpg) no-repeat 100% 50%;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
