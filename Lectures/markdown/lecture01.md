@@ -70,6 +70,8 @@ content_class: flexbox vcenter
 
 ![makers discource tech](assets/makers_discourse_tacit.png)
 
+#### note
+* A.Bell vid:: Commercial Creative Coding (bp 937 sec)
 
 ---
 
@@ -90,8 +92,14 @@ content_class: flexbox vcenter
 ---
 
 
-### Become a professional amateur  
+## Become a professional amateur!  
 #### Learn to learn, invent and engage...fast
+
+## Co - Labor!
+
+#### note
+* Robert Hodgin A.Bell Vid (1414 secs)
+
 
 ---
 
@@ -187,6 +195,10 @@ build_lists: true
 "what are you chicken..."  
 ...other favorite peer pressure lines
 
+#### note
+* A. Bell Cinder Intro (1531 secs)
+* A. Bell Cinder Commercial Intro ( 1662 sec )
+
 ---
 
 title: Why Cinder?
@@ -236,6 +248,7 @@ build_lists: true
 
 #### note
 * take home message from Zen Moment in C __INITIALIZE YOUR VARIABLES!!__
+* A.Bell 5 questions (bp -2078 secs )
 
 ---
 
@@ -259,14 +272,16 @@ title: Why Cinder?
 title: Why Cinder?
 
 * Differentiate yourself in the marketplace
-	* Work at Disney 
+	* Disney (creative code, processing )
 		* [Tron](http://jtnimoy.net/workviewer.php?q=178)
 	* IBM THINK 
 	* [KeimWeisshaar](http://www.kramweisshaar.com/)
+	* [Mill Touch](http://www.creativeapplications.net/featured/the-making-of-the-mill-touch-cinder/)
 
 #### note
 * Stop KeimWeisshaar example at 40sec
 * Run IBM THINK examples from desktop
+* A.Bell Commercial Cinder ( 1662 sec)
 
 
 ---
@@ -460,16 +475,14 @@ content_class: flexbox vcenter
 
 ![Pipeline Example](assets/visualpipeline.gif)
 
----	
+---
 
 title: Ignore the previous 4 slides...sort of
 
+" make simple things simple and hard things possible "
+
 * Cinder abstracts the goryness of OpenGL away
-* However, when you need to know something, change something, learn something the Cinder source is a great place to visit
-	* gl::  
-	example: 
-	<pre>
-	</pre>
+
 
 ---
 

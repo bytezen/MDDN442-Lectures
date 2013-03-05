@@ -18,7 +18,7 @@ var SLIDE_CONFIG = {
 
   // Author information
   presenters: [{
-    name: 'rhazes spell',
+    name: 'course coordinator: rhazes spell',
     //company: 'Job Title, Google',
     //gplus: 'http://plus.google.com/1234567890',
     //twitter: '@yourhandle',
