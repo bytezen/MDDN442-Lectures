@@ -54,17 +54,11 @@ content-class: smaller
 # Books
 
 * Beautiful Data
+* Beautiful Visualization
 * Visualizing Data
 * Programming Collective Intelligence
 * R and Ruby for Everyday Things
 * Natural Language Processing with Python
 
-	* Ongoing and live
-	* Presentation:
-		* _Collision Detection: 21.03_
-		* Photorealism / Non-photoralism: 26.03
-		* Noise / Procedural Textures: 16.04
-		* Procedureal Terrains / Environmental Lighting: 18.04
-		* DemoScene / Curves: 30.04
 
 ---
