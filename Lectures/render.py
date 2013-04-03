@@ -5,7 +5,7 @@ import re
 import jinja2
 import markdown
 
-LECTURE = '07'
+LECTURE = '08'
 
 
 def process_slides():
